@@ -17,9 +17,6 @@ bspc config normal_border_color "#6e6a86"
 # Autostart
 #
 
-# Set display from arandr saved script
-sh ~/.screenlayout/monitor.sh &
-
 # Bar
 ~/.config/polybar/launch.sh &
 
@@ -36,10 +33,7 @@ nitrogen --restore &
 dex -a -s /etc/xdg/autostart/:~/.config/autostart/  &
 
 # Picom
-# picom -b &
-
-# Network Applet
-nm-applet --indicator &
+picom -b &
 
 # Cursor
 xsetroot -cursor_name left_ptr &
